@@ -23,9 +23,9 @@ module ``about functions`` =
     let CreatingFunctionsWithLet() =
         let result1 = add 2 2
         let result2 = add 5 2
-        
-        AssertEquality result1 __
-        AssertEquality result2 __
+
+        AssertEquality result1 4
+        AssertEquality result2 7
 
     [<Koan>]
     let NestingFunctions() =
