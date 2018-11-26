@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Name>FSharpKoans.Test</Name>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FindingKoans.fs" />
+    <Compile Include="RunningKoans.fs" />
+    <Compile Include="GettingTheWholeOutput.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.8.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FSharpKoans.Core\FSharpKoans.Core.fsproj" />
+  </ItemGroup>
+</Project>
