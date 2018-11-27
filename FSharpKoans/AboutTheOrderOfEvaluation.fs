@@ -18,9 +18,10 @@ module ``about the order of evaluation`` =
 
         let result = add (add 5 8) (add 1 1)
 
-        AssertEquality result __
+        AssertEquality result 15
 
         (* TRY IT: What happens if you remove the parenthesis?*)
+        //compile error
 
     [<Koan>]
     let TheBackwardPipeOperatorCanAlsoHelpWithGrouping() =
@@ -31,5 +32,6 @@ module ``about the order of evaluation`` =
             x * 2
 
         let result = double <| add 5 8
+        //pipe backward operator, takes a function on the left and applies it to a value on the right
 
-        AssertEquality result __
+        AssertEquality result 26
